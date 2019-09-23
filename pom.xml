@@ -13,13 +13,14 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<mule.version>3.9.0</mule.version>
-		<mule.tools.version>1.2</mule.tools.version>
+		<mule.tools.version>1.7</mule.tools.version>
 		<derbyVersion>10.13.1.1</derbyVersion>
 		<mqVersion>5.15.10</mqVersion>
 	</properties>
 
 	<build>
 		<plugins>
+		
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-app-maven-plugin</artifactId>
