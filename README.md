@@ -5,3 +5,4 @@
 1. (Optional) Set your MULE_HOME env variable: `export MULE_HOME={locationOfMuleInstall}`
 
 1. Package and deploy: `mvn install`
+----
