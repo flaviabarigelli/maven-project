@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
+
 <mule xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:jms="http://www.mulesoft.org/schema/mule/jms"
 	xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:http="http://www.mulesoft.org/schema/mule/http"
 	xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core"
@@ -38,6 +40,6 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
 
 	<flow name="maven-projectFlow">
 		<jms:inbound-endpoint queue="fligths" connector-ref="Active_MQ" doc:name="JMS" />
-		<logger message="#[payload] QUESTO BRANCH PER PROVARE A FARE DUE COPIE" level="INFO" doc:name="Logger" />
+		<logger message="#[payload]" level="INFO" doc:name="Logger" />
 	</flow>
 </mule>
