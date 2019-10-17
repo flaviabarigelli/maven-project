@@ -42,4 +42,9 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
 		<jms:inbound-endpoint queue="fligths" connector-ref="Active_MQ" doc:name="JMS" />
 		<logger message="#[payload]" level="INFO" doc:name="Logger" />
 	</flow>
+	
+		<flow name="maven-projectFlowl">
+		<jms:inbound-endpoint queue="fligths" connector-ref="Active_MQ" doc:name="JMS" />
+		<logger message="#[payload]" level="INFO" doc:name="Logger" />
+	</flow>
 </mule>
