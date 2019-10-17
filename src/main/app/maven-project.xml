@@ -40,6 +40,6 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
 
 	<flow name="maven-projectFlow">
 		<jms:inbound-endpoint queue="fligths" connector-ref="Active_MQ" doc:name="JMS" />
-		<logger message="#[payload] update " level="INFO" doc:name="Logger" />
+		<logger message="lalala #[payload] update " level="INFO" doc:name="Logger" />
 	</flow>
 </mule>
