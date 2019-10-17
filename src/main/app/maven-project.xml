@@ -45,6 +45,6 @@
 
 	<flow name="maven-projectFlow">
 		<jms:inbound-endpoint queue="fligths" connector-ref="Active_MQ" doc:name="JMS" />
-		<logger message="#[payload]" level="INFO" doc:name="Logger" />
+		<logger message="#[payload] popopop" level="INFO" doc:name="Logger" />
 	</flow>
 </mule>
